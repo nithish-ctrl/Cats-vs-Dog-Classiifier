@@ -19,7 +19,7 @@ def load__model():
     print('[INFO] : Model loading ................')
     global model
     # model = tf.keras.models.load_model(MODEL_FOLDER + '/catsVSdogs.h5')
-    model = load_model(MODEL_FOLDER + '/cat_dog_classifier.h5')
+    model = load_model('/cat_dog_classifier.h5')
     global graph
     graph = tf.get_default_graph()
     print('[INFO] : Model loaded')
